@@ -1,0 +1,23 @@
+replicaCount: 1
+image:
+  repository: mongo
+  tag: "7.0"
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 27017
+  targetPort: 27017
+storage:
+  enabled: true
+  accessMode: ReadWriteOnce
+  size: 1Gi
+  storageClass: gp2
+resources:
+  requests:
+    cpu: 200m
+    memory: 512Mi
+  limits:
+    cpu: 500m
+    memory: 1Gi
+  namespace: production
+  auth:
