@@ -1,0 +1,26 @@
+replicaCount: 2
+image:
+  repository: kunalmane/mern-frontend
+  tag: v15
+  pullPolicy: IfNotPresent
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 80
+ingress:
+  enabled: true
+  host: todolist.example.com
+  path: /
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 256Mi
+hpa:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  cpuUtilization: 60
+namespace: production
