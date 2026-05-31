@@ -1,4 +1,0 @@
-namespace: production
-storage:
-  size: 10Gi
-  storageClass: gp2
