@@ -1,4 +1,4 @@
 namespace: production
 storage:
   size: 10Gi
-  storageClassName: gp2
+  storageClassName: hostpath
