@@ -16,3 +16,6 @@ hpa:
   targetCPUUtilization: 60
 secretName: backend-secret
 configMapName: be-config
+secret:
+  mongoUri: mongodb://mongo:27017/todolist
+  port: "5000"

@@ -22,3 +22,6 @@ hpa:
 namespace: production
 secretName: backend-secret
 configMapName: be-config
+secret:
+  mongoUri: mongodb://mongo:27017/todolist
+  port: "5000"
