@@ -1,7 +1,7 @@
 replicaCount: 2
 namespace: production
 image:
-  repository: kunalmane/mern-frontend
+  repository: 696637901454.dkr.ecr.ap-south-1.amazonaws.com/project-frontend
   tag: "v15"
 ingress:
   enabled: true

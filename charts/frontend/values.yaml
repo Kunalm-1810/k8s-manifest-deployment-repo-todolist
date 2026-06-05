@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: kunalmane/mern-frontend
+  repository: 696637901454.dkr.ecr.ap-south-1.amazonaws.com/project-frontend
   tag: v15
   pullPolicy: IfNotPresent
 service:
