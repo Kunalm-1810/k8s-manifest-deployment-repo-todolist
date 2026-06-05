@@ -1,12 +1,7 @@
 replicaCount: 2
 image:
-
   repository: 696637901454.dkr.ecr.ap-south-1.amazonaws.com/project-backend
   tag: v15
-
-  repository: kunalmane/mern-backend
-  tag: v13
-
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
