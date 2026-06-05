@@ -9,7 +9,7 @@ service:
   targetPort: 80
 ingress:
   enabled: true
-  host: todolist.example.com
+  host: todolist.kodetechm.com
   path: /
 resources:
   requests:
