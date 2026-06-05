@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
   repository: kunalmane/mern-backend
-  tag: v15
+  tag: v10
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
