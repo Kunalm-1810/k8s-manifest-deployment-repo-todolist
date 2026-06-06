@@ -7,6 +7,9 @@ service:
   type: ClusterIP
   port: 5000
   targetPort: 5000
+ingress:
+  host: todolist.kodetechm.com
+  certificateArn: "arn:aws:acm:ap-south-1:696637901454:certificate/08e7bb56-36e4-4948-8e70-84dcb77bbd2e"
 resources:
   limits:
     cpu: 500m
