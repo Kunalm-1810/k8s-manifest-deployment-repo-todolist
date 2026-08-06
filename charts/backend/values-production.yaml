@@ -1,8 +1,8 @@
 replicaCount: 2
 namespace: production
 image: 
-  repository: 696637901454.dkr.ecr.ap-south-1.amazonaws.com/project-backend
-  tag: "v13"
+  repository: kunalmane/mern-backend
+  tag: "v15"
 resources:
   requests:
     cpu: "250m"
