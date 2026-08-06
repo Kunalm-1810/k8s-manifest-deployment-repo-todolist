@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: mongo-container
-        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
         ports:
         - containerPort: {{ .Values.service.targetPort }}
         volumeMounts:
@@ -33,12 +33,12 @@ spec:
           limits:
             memory: {{ .Values.resources.limits.memory }}
             cpu: {{ .Values.resources.limits.cpu }}
-      volumeClaimTemplates:
-      - metadata:
-          name: mongo-persistent-storage
-        spec: 
-          accessModes: [ "{{ .Values.storage.accessMode }}" ]
-          resources:
-            requests:
-              storage: {{ .Values.storage.size }}
-          storageClassName: {{ .Values.storage.storageClassName }}
+  volumeClaimTemplates:
+  - metadata:
+      name: mongo-persistent-storage
+    spec: 
+      accessModes: [ "{{ .Values.storage.accessMode }}" ]
+      resources:
+        requests:
+          storage: {{ .Values.storage.size }}
+      storageClassName: {{ .Values.storage.storageClassName }}
