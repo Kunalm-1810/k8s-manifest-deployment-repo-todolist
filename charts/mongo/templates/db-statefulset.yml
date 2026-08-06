@@ -1,14 +1,15 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: StatefulSet
 metadata:
   name: mongo-deployment
   namespace: {{ .Values.namespace }}
   labels:
     app: mongo
 spec:
-  strategy:
+  updateStrategy:
     type: RollingUpdate
   replicas: {{ .Values.replicaCount }}
+  serviceName: "mongo-headless"
   selector:
     matchLabels:
       app: mongo
@@ -32,7 +33,12 @@ spec:
           limits:
             memory: {{ .Values.resources.limits.memory }}
             cpu: {{ .Values.resources.limits.cpu }}
-      volumes:
-      - name: mongo-persistent-storage
-        persistentVolumeClaim:
-          claimName: mongo-app-pvc
+      volumeClaimTemplates:
+      - metadata:
+          name: mongo-persistent-storage
+        spec: 
+          accessModes: [ "{{ .Values.storage.accessMode }}" ]
+          resources:
+            requests:
+              storage: {{ .Values.storage.size }}
+          storageClassName: {{ .Values.storage.storageClassName }}

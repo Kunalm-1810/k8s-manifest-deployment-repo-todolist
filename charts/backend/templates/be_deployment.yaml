@@ -1,11 +1,12 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: deployment
 metadata:
   name: be-deployment
   namespace: {{ .Values.namespace }}
   labels:
     app: be-app
 spec:
+  serviceName: be-service
   replicas: {{ .Values.replicaCount }}
   strategy:
     type: RollingUpdate

@@ -1,3 +1,0 @@
-# ClusterIssuer is managed by the ArgoCD GitOps repo:
-# k8s-gitops-platfrom-argocd-todolist/argocd/cluster-issuer.yaml
-# Do not duplicate it here to avoid drift.

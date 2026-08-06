@@ -1,4 +1,4 @@
 namespace: production
 storage:
   size: 10Gi
-  storageClassName: hostpath
+  storageClassName: ebs-gp3-sc

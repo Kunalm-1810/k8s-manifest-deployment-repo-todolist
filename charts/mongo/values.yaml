@@ -1,22 +1,22 @@
-replicaCount: 1
+replicaCount: 3
 image:
   repository: mongo
   tag: "7.0"
   pullPolicy: IfNotPresent
 service:
-  type: ClusterIP
+  type: None
   port: 27017
   targetPort: 27017
 storage:
   enabled: true
   accessMode: ReadWriteOnce
-  size: 1Gi
-  storageClassName: hostpath
+  size: 20Gi
+  storageClassName: ebs-gp3-sc
 resources:
   requests:
     cpu: 200m
     memory: 512Mi
   limits:
     cpu: 500m
-    memory: 1Gi
+    memory: 2Gi
 namespace: production
