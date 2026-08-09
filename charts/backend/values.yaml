@@ -9,7 +9,7 @@ service:
   targetPort: 5000
 ingress:
   host: todolist.kodetechm.com
-  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/8c92a063-ea57-4333-bec9-541a70695588"
+  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/cf9f2453-01ab-4976-8993-0e09f10ac3f4"
 resources:
   limits:
     cpu: 500m
