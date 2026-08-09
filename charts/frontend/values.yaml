@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
-  repository: kunalmane/mern-frontend
-  tag: "v15"
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontend
+  tag: "v41"
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP

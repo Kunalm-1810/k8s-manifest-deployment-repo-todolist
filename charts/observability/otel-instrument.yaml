@@ -1,0 +1,15 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: Instrumentation
+metadata:
+  name: global-instrumentation
+  namespace: observability
+spec:
+  exporter:
+    otlp:
+      endpoint: "http://cluster.local"
+  propagators:
+    - tracecontext
+    - baggage
+  nodejs:
+    image: ghcr.io/open-telemetry/opentelemetry-operator/autoinstrumentation-nodejs:latest  
+  

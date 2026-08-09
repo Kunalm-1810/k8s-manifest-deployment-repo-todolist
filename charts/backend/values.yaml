@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
-  repository: kunalmane/mern-backend
-  tag: "v15"
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-backend
+  tag: "v41"
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
@@ -9,7 +9,7 @@ service:
   targetPort: 5000
 ingress:
   host: todolist.kodetechm.com
-  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/2a10a659-aba5-4232-a204-eff0a284631a"
+  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/8c92a063-ea57-4333-bec9-541a70695588"
 resources:
   limits:
     cpu: 500m

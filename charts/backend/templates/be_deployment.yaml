@@ -19,6 +19,7 @@ spec:
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "5000"
+        instrumentation.opentelemetry.io/inject-nodejs: "oservability/global-instrumentation"
     spec:
       containers:
         - name: be-container
