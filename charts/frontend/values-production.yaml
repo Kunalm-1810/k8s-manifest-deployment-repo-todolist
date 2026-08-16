@@ -1,7 +1,7 @@
 replicaCount: 2
 namespace: production
 image:
-  repository: kunalmane/mern-backend
+  repository: kunalmane/mern-frontend
   tag: "v15"
 ingress:
   enabled: true
