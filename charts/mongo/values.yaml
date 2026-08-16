@@ -1,4 +1,5 @@
 replicaCount: 3
+mongoReplSetName: rs0
 image:
   repository: mongo
   tag: "7.0"

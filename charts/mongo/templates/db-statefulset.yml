@@ -21,6 +21,12 @@ spec:
       containers:
       - name: mongo-container
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        command:
+          - mongod
+          - "--replSet"
+          - {{ .Values.mongoReplSetName }}
+          - "--bind_ip_all"
+
         ports:
         - containerPort: {{ .Values.service.targetPort }}
         volumeMounts:
