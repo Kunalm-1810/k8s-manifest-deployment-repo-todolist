@@ -2,7 +2,7 @@ replicaCount: 2
 namespace: production
 image:
   repository: kunalmane/mern-frontend
-  tag: "v15"
+  tag: "v16"
 ingress:
   enabled: true
   host: todolist.kodetechm.com
