@@ -18,5 +18,5 @@ hpa:
 secretName: backend-secret
 configMapName: be-config
 secret:
-  mongoUri: mongodb://mongo-headless:27017/todolist
+  mongoUri: mongodb://mongo-deployment-0.mongo-headless.production.svc.cluster.local:27017,mongo-deployment-1.mongo-headless.production.svc.cluster.local:27017,mongo-deployment-2.mongo-headless.production.svc.cluster.local:27017/todolist?replicaSet=rs0
   port: "5000"
