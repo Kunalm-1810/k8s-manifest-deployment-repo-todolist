@@ -11,7 +11,7 @@ ingress:
   enabled: true
   host: todolist.kodetechm.com
   path: /
-  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/cf9f2453-01ab-4976-8993-0e09f10ac3f4"
+  certificateArn: "arn:aws:acm:ap-south-1:106940013645:certificate/8930c901-0be8-41a0-8401-4e16e3937baa"    # add aws arn acm certificate
 resources:
   requests:
     cpu: 100m
