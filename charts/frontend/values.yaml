@@ -1,7 +1,7 @@
 replicaCount: 2
 image:
   repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontend
-  tag: "v44"
+  tag: "v47"
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
