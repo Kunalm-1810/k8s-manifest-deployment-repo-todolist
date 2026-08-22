@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: kunalmane/mern-backend
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-backend
   tag: "v44"
   pullPolicy: IfNotPresent
 service:

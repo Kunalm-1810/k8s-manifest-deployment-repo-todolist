@@ -1,8 +1,8 @@
 replicaCount: 2
 namespace: production
 image:
-  repository: kunalmane/mern-frontend
-  tag: "v16"
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontend:v44
+  tag: "v44"
 ingress:
   enabled: true
   host: todolist.kodetechm.com
