@@ -25,3 +25,6 @@ hpa:
   maxReplicas: 5
   cpuUtilization: 60
 namespace: production
+vpa:
+  enabled: true
+  updateMode: "off"
