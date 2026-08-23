@@ -1,7 +1,7 @@
 replicaCount: 2
 namespace: production
 image:
-  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontendas
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontend
   tag: "v48"
 ingress:
   enabled: true
