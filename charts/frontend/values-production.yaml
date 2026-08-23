@@ -1,4 +1,4 @@
-replicaCount: 200
+replicaCount: 2
 namespace: production
 image:
   repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-frontend

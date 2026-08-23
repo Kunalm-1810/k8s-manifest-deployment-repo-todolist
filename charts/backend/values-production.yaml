@@ -1,7 +1,7 @@
 replicaCount: 2
 namespace: production
 image: 
-  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-backendas
+  repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-backend
   tag: "v48"
 resources:
   requests:
