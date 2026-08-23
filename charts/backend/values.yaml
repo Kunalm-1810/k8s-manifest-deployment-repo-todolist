@@ -1,4 +1,4 @@
-replicaCount: 2
+replicaCount: 100
 image:
   repository: 106940013645.dkr.ecr.ap-south-1.amazonaws.com/mern-devsecops-backend
   tag: "v48"
