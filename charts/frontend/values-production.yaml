@@ -20,5 +20,5 @@ hpa:
   maxReplicas: 5
   cpuUtilization: 60
 vpa:
-  enabled: false
+  enabled: true
   updateMode: "off"
