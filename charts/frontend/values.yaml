@@ -26,5 +26,5 @@ hpa:
   cpuUtilization: 60
 namespace: production
 vpa:
-  enabled: true
+  enabled: false
   updateMode: "off"

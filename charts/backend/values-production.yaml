@@ -16,7 +16,7 @@ hpa:
   maxReplicas: 5
   targetCPUUtilization: 60
 vpa:
-  enabled: true
+  enabled: false
   updateMode: "off"
   
 secretName: backend-secret
