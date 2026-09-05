@@ -124,7 +124,7 @@ k8s-manifest-deployment-repo-todolist/
 └─────────────────────────────────────────────────────────────┘
 ```
 
-[EKS_Architecture](mern_eks_architecture.png)
+![EKS_Architecture](mern_eks_architecture.png)
 
 ---
 
