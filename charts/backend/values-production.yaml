@@ -15,10 +15,6 @@ hpa:
   minReplicas: 2
   maxReplicas: 5
   targetCPUUtilization: 60
-vpa:
-  enabled: true
-  updateMode: "off"
-  
 secretName: backend-secret
 configMapName: be-config
 secret:
