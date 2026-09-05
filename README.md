@@ -87,42 +87,6 @@ k8s-manifest-deployment-repo-todolist/
 ## 🏗️ Architecture
 
 ```
-  Internet
-     │  HTTPS :443
-     ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      AWS EKS Cluster                        │
-│                    namespace: production                     │
-│                                                             │
-│   ┌──────────────────────────────────────────────────┐      │
-│   │           AWS Application Load Balancer          │      │
-│   │   /      ──────────────▶  fe-app:80              │      │
-│   │   /api   ──────────────▶  be-app:5000            │      │
-│   └──────────────────────────────────────────────────┘      │
-│              │                        │                     │
-│              ▼                        ▼                     │
-│   ┌──────────────────┐    ┌──────────────────────┐         │
-│   │   fe-deployment  │    │    be-deployment      │         │
-│   │  React + Nginx   │    │  Node.js + Express   │         │
-│   │  2–5 replicas    │    │  2–5 replicas        │         │
-│   │  HPA             │    │  HPA                 │         │
-│   └──────────────────┘    └──────────────────────┘         │
-│                                       │ MONGO_CONN_STR      │
-│                                       ▼                     │
-│                          ┌───────────────────────┐          │
-│                          │   mongo-deployment    │          │
-│                          │  StatefulSet (3 pods) │          │
-│                          │  ReplicaSet: rs0      │          │
-│                          │  EBS gp3 PVC / pod    │          │
-│                          └───────────────────────┘          │
-│                                                             │
-│   ┌──────────────────────────────────────────────────┐      │
-│   │              namespace: observability            │      │
-│   │  OTel Collector ──▶ Prometheus (remote write)   │      │
-│   │  Auto-Instrumentation CR ──▶ Node.js pods       │      │
-│   └──────────────────────────────────────────────────┘      │
-└─────────────────────────────────────────────────────────────┘
-```
 
 ![EKS_Architecture](mern_eks_architecture.png)
 
