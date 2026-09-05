@@ -18,4 +18,11 @@ hpa:
   enabled: true
   minReplicas: 2
   maxReplicas: 5
+<<<<<<< HEAD
   cpuUtilization: 60
+=======
+  cpuUtilization: 60
+vpa:
+  enabled: true
+  updateMode: "off"
+>>>>>>> 2f296f12d9267f34305bad6b883dccb0c32b7a27
