@@ -96,7 +96,6 @@ k8s-manifest-deployment-repo-todolist/
 
 ## 🏗️ Architecture
 
-```
 
 ![EKS_Architecture](mern_eks_architecture.png)
 
