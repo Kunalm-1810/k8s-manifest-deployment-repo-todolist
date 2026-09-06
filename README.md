@@ -38,7 +38,7 @@ This repository is the **single source of truth** for the Kubernetes deployment 
 | `charts/observability` | OpenTelemetry Collector, Auto-Instrumentation CR, PodMonitor |
 
 ---
-## What It Solves
+## 🎯 What It Solves
 
 Running the application on AWS EKS moves it from manual, fragile deployments to a
 production-grade managed environment:
