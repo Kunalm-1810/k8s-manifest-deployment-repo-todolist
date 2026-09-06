@@ -38,7 +38,17 @@ This repository is the **single source of truth** for the Kubernetes deployment 
 | `charts/observability` | OpenTelemetry Collector, Auto-Instrumentation CR, PodMonitor |
 
 ---
+## What It Solves
 
+Running the application on AWS EKS moves it from manual, fragile deployments to a
+production-grade managed environment:
+
+- **High availability** — the app stays up and accessible even under failures or traffic spikes
+- **Fault Tolerance** — multiple replicas across pods (and, for MongoDB, replica set members) mean a single pod or node dying doesn't take the app down
+- **Self-healing** — Kubernetes automatically restarts pods that crash or fail health checks
+- **Auto-scaling** — HPA (Horizontal Pod Autoscaler) scales pods up under high traffic and back down when load drops
+- **Multi-tier microservice management** — frontend, backend, and database run as independently scalable, deployable services rather than a single monolith
+---
 ## 📁 Repository Structure
 
 ```
